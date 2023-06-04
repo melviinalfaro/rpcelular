@@ -7,15 +7,27 @@
 
 :root {
     --body-color: #ffffff;
-    --sidebar-color: #064f32;
-    --primary-color: #38745b;
-    --primary-color-light: #06603c;
-    --toggle-color: #ddd;
-    --text-color: #fff;
+    --sidebar-color: #ffffff;
+    --sidebar-text: #ebeefd;
+    --primary-color: #3661ed;
+
+    --toggle-color: #3661ed;
+    --text-color: #4A4E4D;
 
     --tran-03: all 0.2s ease;
     --tran-04: all 0.4s ease;
     --tran-05: all 0.3s ease;
+}
+
+body.dark {
+    --body-color: #1a1c1e;
+
+    --sidebar-color: #1a1c1e;
+    --sidebar-text: #303234;
+    --primary-color: #ccc;
+
+    --toggle-color: #3661ed;
+    --text-color: #ccc;
 }
 
 body {
@@ -29,21 +41,13 @@ body {
     color: #fff;
 }
 
-body.dark {
-    --body-color: #161616;
-    --sidebar-color: #202124;
-    --primary-color: #0e422c;
-    --primary-color-light: #0e422c;
-    --toggle-color: #fff;
-    --text-color: #ccc;
-}
-
 .sidebar {
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 250px;
+    border-right: 1px solid var(--sidebar-text);
     padding: 10px 14px;
     background: var(--sidebar-color);
     transition: var(--tran-05);
@@ -130,11 +134,11 @@ header .image-text .profession {
 .sidebar header .toggle {
     position: absolute;
     top: 52%;
-    right: 13px;
+    right: 12px;
     transform: translateY(-50%);
     height: 35px;
     width: 35px;
-    background-color: var(--primary-color);
+    background-color: var(--toggle-color);
     color: var(--body-color);
     border-radius: 50%;
     display: flex;
@@ -164,8 +168,8 @@ body.dark .sidebar header .toggle {
 .sidebar li a {
     list-style: none;
     height: 100%;
-    background-color: transparent;
     display: flex;
+    background-color: transparent;
     align-items: center;
     height: 100%;
     width: 100%;
@@ -175,15 +179,23 @@ body.dark .sidebar header .toggle {
 }
 
 .sidebar li a:hover {
-    background-color: var(--primary-color);
+    background-color: var(--sidebar-text);
+    color: var(--primary-color);
 }
+
+.sidebar li a.active {
+    background-color: var(--sidebar-text);
+}
+
 .sidebar li a:hover .icon,
 .sidebar li a:hover .text {
-    color: var(--body-color);
+    color: var(--primary-color);
 }
-body.dark .sidebar li a:hover .icon,
-body.dark .sidebar li a:hover .text {
-    color: var(--text-color);
+
+.sidebar li a.active .icon,
+.sidebar li a.active .text {
+    background-color: var(--sidebar-text);
+    color: var(--primary-color);
 }
 
 .sidebar .menu-bar {
@@ -198,7 +210,7 @@ body.dark .sidebar li a:hover .text {
 }
 .sidebar .menu-bar .mode {
     border-radius: 6px;
-    background-color: var(--primary-color-light);
+    background-color: var(--sidebar-text);
     position: relative;
     transition: var(--tran-05);
 }
@@ -260,4 +272,12 @@ body.dark .switch::before {
 
 body.dark .home .text {
     color: var(--text-color);
+}
+
+.titulo {
+    color: var(--text-color);
+}
+
+h2 {
+    font-weight: 600;
 }

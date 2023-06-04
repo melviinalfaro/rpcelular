@@ -6,7 +6,7 @@
             </span>
 
             <div class="text logo-text">
-                <span class="name">Recursos</span>
+                <span class="name">Android</span>
             </div>
         </div>
 
@@ -16,14 +16,14 @@
     <div class="menu-bar">
         <div class="menu">
             <ul class="menu-links">
-                <li class="nav-link active">
-                    <a href="#">
+                <li class="nav-link">
+                    <a href="{{ route('inicio') }}" class="{{ Request::is('inicio') ? 'active' : '' }}">
                         <i class="icon material-symbols-rounded">home</i>
                         <span class="text nav-text">Inicio</span>
                     </a>
                 </li>
-                <li class="nav-link active">
-                    <a href="#">
+                <li class="nav-link">
+                    <a href="{{ route('usuario') }}" class="{{ Request::is('usuario') ? 'active' : '' }}">
                         <i class="icon material-symbols-rounded">group</i>
                         <span class="text nav-text">Usuarios</span>
                     </a>
@@ -56,8 +56,8 @@
 
             <li class="mode">
                 <div class="sun-moon">
-                    <i class="icon material-symbols-rounded moon">dark_mode</i>
                     <i class="icon material-symbols-rounded sun">light_mode</i>
+                    <i class="icon material-symbols-rounded moon">dark_mode</i>
                 </div>
                 <span class="mode-text text">Oscuro</span>
 
