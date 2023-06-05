@@ -6,11 +6,11 @@
             </span>
 
             <div class="text logo-text">
-                <span class="name">Android</span>
+                <span class="name">Recursos QR</span>
             </div>
         </div>
 
-        <i class="material-symbols-rounded sidebarBtn toggle">menu</i>
+        <i class="material-symbols-rounded sidebarBtn toggle" style="display: none;">menu</i>
     </header>
 
     <div class="menu-bar">
