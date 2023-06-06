@@ -4,6 +4,6 @@
 
 @section('content')
     <div class="container-fluid py-2">
-        <h2 class="titulo">Recursos interactivos</h2>
+        <h2 class="titulo">Dashboard</h2>
     </div>
 @endsection

@@ -48,7 +48,7 @@
 
         <div class="bottom-content">
             <li class="">
-                <a href="#">
+                <a href="{{ route('cerrar.sesion') }}">
                     <i class="icon material-symbols-rounded"> logout</i>
                     <span class="text nav-text">Cerrar sesión</span>
                 </a>
