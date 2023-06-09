@@ -6,7 +6,7 @@
             </span>
 
             <div class="text logo-text">
-                <span class="name">Recursos QR</span>
+                <span class="name">República Celular</span>
             </div>
         </div>
 
@@ -49,7 +49,7 @@
         <div class="bottom-content">
             <li class="">
                 <a href="{{ route('cerrar.sesion') }}">
-                    <i class="icon material-symbols-rounded"> logout</i>
+                    <i class="icon material-symbols-rounded">logout</i>
                     <span class="text nav-text">Cerrar sesión</span>
                 </a>
             </li>

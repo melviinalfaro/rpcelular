@@ -14,7 +14,7 @@
     <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
-    <title>@yield('title') - {{ config('app.name') }}</title>
+    <title>@yield('title') - República Celular</title>
 </head>
 
 <body>
