@@ -9,8 +9,7 @@
                 <span class="name">República Celular</span>
             </div>
         </div>
-
-        <i class="material-symbols-rounded sidebarBtn toggle" style="display: none;">menu</i>
+        <i class="material-icons-round sidebarBtn toggle" style="display: none;">menu</i>
     </header>
 
     <div class="menu-bar">
@@ -18,13 +17,13 @@
             <ul class="menu-links">
                 <li class="nav-link">
                     <a href="{{ route('inicio') }}" class="{{ Request::is('inicio') ? 'active' : '' }}">
-                        <i class="icon material-symbols-rounded">home</i>
+                        <i class="icon material-icons-round">home</i>
                         <span class="text nav-text">Inicio</span>
                     </a>
                 </li>
                 <li class="nav-link">
                     <a href="{{ route('usuario') }}" class="{{ Request::is('usuario') ? 'active' : '' }}">
-                        <i class="icon material-symbols-rounded">group</i>
+                        <i class="icon material-icons-round">group</i>
                         <span class="text nav-text">Usuarios</span>
                     </a>
                 </li>
@@ -34,13 +33,13 @@
         <div class="medium-content">
             <li class="">
                 <a href="#">
-                    <i class="icon material-symbols-rounded">account_circle</i>
+                    <i class="icon material-icons-round">account_circle</i>
                     <span class="text nav-text">Mi perfil</span>
                 </a>
             </li>
             <li class="">
                 <a href="#">
-                    <i class="icon material-symbols-rounded">settings</i>
+                    <i class="icon material-icons-round">settings</i>
                     <span class="text nav-text">Configuración</span>
                 </a>
             </li>
@@ -49,15 +48,15 @@
         <div class="bottom-content">
             <li class="">
                 <a href="{{ route('cerrar.sesion') }}">
-                    <i class="icon material-symbols-rounded">logout</i>
+                    <i class="icon material-icons-round">logout</i>
                     <span class="text nav-text">Cerrar sesión</span>
                 </a>
             </li>
 
             <li class="mode">
                 <div class="sun-moon">
-                    <i class="icon material-symbols-rounded sun">light_mode</i>
-                    <i class="icon material-symbols-rounded moon">dark_mode</i>
+                    <i class="icon material-icons-round sun">light_mode</i>
+                    <i class="icon material-icons-round moon">dark_mode</i>
                 </div>
                 <span class="mode-text text">Oscuro</span>
 
